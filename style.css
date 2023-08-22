@@ -163,7 +163,6 @@
         width: 25rem;
         position: relative;
         display: flex;
-        justify-content: left;
         align-items: center;
         border-radius: 4px;
         overflow: hidden;
@@ -276,10 +275,6 @@
     }
     .bookmark_ul li svg{
         height: 15px;
-        align-self: top;
-        position: absolute;
-        top: 3px;
-        left: 0;
     }
     .bookmark_ul li{
         border-bottom: 1px solid gray;
@@ -288,10 +283,8 @@
         padding: 0 0.3rem;
         list-style-type: none;
         display: flex;
-     align-items: flex-start;
-     position: relative;
-     gap: 5px;
-     /* justify-content: center; */
+     align-items: center;
+     justify-content: left;
     }
     
     /* ------popup------- */

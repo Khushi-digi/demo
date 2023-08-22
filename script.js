@@ -54,7 +54,7 @@ let prac_ul=document.querySelector('.prac_ul')
       setTimeout((e)=>{
       window.location.reload();
       },2000)
-      localStorage.setItem(`${Date.now()}`,`${elem.innerHTML}`)// key value pair
+      localStorage.setItem(`${Date.now()}`,`${ click[0].innerHTML}`)// key value pair
       pops("bookmarked successfully")
      })
   })
@@ -76,7 +76,7 @@ let bookmark=document.querySelector('.bookmark_ul')
 
  Object.keys(localStorage).forEach((key)=>{
   let li2=document.createElement('li'); 
-  li2.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fcEC6E" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg><p style="margin-left:17px">${localStorage.getItem(key)}</p>`
+  li2.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>${localStorage.getItem(key)}`
   bookmark.appendChild(li2);
  })
 
